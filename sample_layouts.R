@@ -34,6 +34,6 @@ server <- function(input, output, session) {
   output$myplot <- renderPlot({
     hist(mtcars$mpg, main = "Histogram of MPG", col = "steelblue", border = "white")
   
-})}
+})} 
 
 shinyApp(ui, server)

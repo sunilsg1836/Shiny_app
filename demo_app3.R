@@ -7,14 +7,14 @@ ui <- fluidPage(
   numericInput("No3", label = "C", value = 0),
   
   #outputs
-  textOutput("sumabc")
+  textOutput("multabc")
   
 )
 
 server <- function(input, output, session) {
-  output$sumabc <- renderText({
-    sum <- input$No1 + input$No2 + input$No3 
-    paste("sum is :", sum)
+  output$multabc <- renderText({
+    mult <- input$No1 * input$No2 * input$No3 
+    paste("value is :", mult)
   })
   
 }
